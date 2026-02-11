@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="intro.css" rel="stylesheet">
+    <script src="stroop.js"></script>
+    <title>Préambule</title>
+</head>
+<body>
+        <h1 id = "titre">Préambule de l'expérience</h1>
+
+    <p>
+        Bonjour ! Sur cette page, vous trouverez les consignes de l'expérience que vous allez passer 
+        ainsi qu'un questionnaire portant sur vos informations personnelles. Merci ! 
+        <!--faire un vrai texte-->
+    </p>
+
+    <p class ="elt">
+        <i><u>Déroulement de l'expérience : </u></i><br><br>
+        Durant cette expérience, divers thèmes vont être abordés. 
+        Vous devrez essayer de retenir les informations présentées sur les différents documents, 
+        suite à quoi vous allez répondre à un QCM (Questionnaire à Choix Multiples). 
+    </p>
+
+    <form class = "elt" id = "dataForm" action= "index.html">
+        <!--âge, genre, activité (étu, actif, en recherche d'emploi, retraité), troubles ? (datonisme, attention, lecture, moteurs)-->
+        <div class = "fitem">
+            <label for="age" class = "q">Quel est votre âge ?</label><br>
+            <input type="number" id="age" name="age"><br>
+        </div>
+        
+        <div class = "fitem">
+            <label for="genre" class = "q">Quel est votre genre ?</label><br>
+            <input type="radio" id="H" name="genre" value="male">
+            <label for="H">Homme</label><br>
+            <input type="radio" id="F" name="genre" value="female">
+            <label for="F">Femme</label><br>
+            <input type="radio" id="Autre" name="genre" value="NA">
+            <label for="Autre">Autre</label><br>   
+        </div>  
+        
+        <div class = "fitem">
+            <label for="etudiant" class = "q">Êtes-vous actuellement étudiant ?</label> <br>
+            <input type="radio" id="student" name="etudiant" value="true">
+            <label for="student">Oui</label><br>
+            <input type="radio" id="notStudent" name="etudiant" value="false">
+            <label for="notStudent">Non</label><br>
+        </div>  
+
+        <div class = "fitem">
+            <label for="etudiant" class = "q">Si non, depuis quand n'êtes-vous plus étudiant ? (en années)</label> <br>
+            <input type="number" id="duree" name="duree" placeholder="Durée en années">
+        </div>  
+
+        <div class = "fitem">
+            <label for="troubles" class = "q">Avez-vous déjà des connaissances dans l'un des sujets suivants ?</label><br>
+            <input type="checkbox" name="troubles" value="daltonisme" id = "dalt">
+            <label for="dalt"> Daltonisme </label><br>
+            <input type="checkbox" name="troubles" value="troubleAttention" id ="att">
+            <label for="att"> Troubles de l'attention (TDAH...) </label><br>
+            <input type="checkbox" name="troubles" value="troubleLecture" id ="lec">
+            <label for="lec"> Troubles de la lecture </label><br>
+            <input type="checkbox" name="troubles" value="troubleMotricité" id ="mot">
+            <label for="mot"> Troubles de la motricité </label><br>
+        </div>
+
+        <div class="consentement">
+            <input type="checkbox" name="souris" value="oui" id = "oui">
+            <label for="oui"> Je consens à participer à cette expérience et à ce que mes données soient utilisées dans le cadre de cette recherche.</label><br>
+        </div>
+
+        <div>
+            <input type="submit" value ="Valider" id="btn" onclick="convertToJson()">   <input type="reset" id="btn">
+        </div>
+        
+    </form>
+</body>
+</html>
