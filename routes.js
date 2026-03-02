@@ -36,4 +36,4 @@ document.addEventListener('submit', function(e) {
         // Redirection forcée
         window.location.href = nouvelleUrl;
     }
-});
+}); 

@@ -21,10 +21,10 @@ async function loadExperience() {
         let introContent = "";
 
         if (mode === 'B' || mode === 'D') {
-            // Utilise data.intro_video si présent, sinon placeholder
+            // Note : On utilise data-src au lieu de src pour le lazy loading
             const media = data.intro_video 
-                ? `<video autoplay loop muted playsinline class="w-100" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-                        <source src="${data.intro_video}" type="video/mp4">
+                ? `<video loop muted playsinline class="w-100 lazy-video" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                        <source data-src="${data.intro_video}" type="video/mp4">
                    </video>`
                 : `<div class="video-placeholder"><span>[ Illustration Introduction ]</span></div>`;
 
@@ -52,10 +52,9 @@ async function loadExperience() {
             let layout = "";
 
             if (mode === 'B' || mode === 'D') {
-                // Si "video" est présent dans le chapitre du JSON, on l'affiche
                 const mediaHtml = chap.video 
-                    ? `<video autoplay loop muted playsinline class="w-100" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-                            <source src="${chap.video}" type="video/mp4">
+                    ? `<video loop muted playsinline class="w-100 lazy-video" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                            <source data-src="${chap.video}" type="video/mp4">
                        </video>`
                     : `<div class="video-placeholder"><span>[ Illustration ${sujet} - Chapitre ${index + 1} ]</span></div>`;
 
@@ -84,7 +83,9 @@ async function loadExperience() {
                 </section>`;
         });
 
-        // 5. Rendu de la FIN (Corrigé pour le centrage)
+        // ==========================================
+        // 5. Rendu de la FIN
+        // ==========================================
         container.innerHTML += `
             <section class="section-full d-flex flex-column align-items-center justify-content-center text-center">
                 <div class="container">
@@ -99,9 +100,45 @@ async function loadExperience() {
             </section>
         `;
 
+        // ==========================================
+        // 6. INITIALISATION DU LAZY LOADING
+        // ==========================================
+        initLazyVideos();
+
     } catch (e) {
         console.error("Erreur :", e);
     }
+}
+
+/**
+ * Fonction qui détecte quand une vidéo entre dans le champ de vision
+ * pour la charger et la lancer proprement.
+ */
+function initLazyVideos() {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const video = entry.target;
+                const source = video.querySelector('source');
+                
+                // Si la source a un data-src, on le passe en vrai src
+                if (source && source.dataset.src) {
+                    source.src = source.dataset.src;
+                    source.removeAttribute('data-src');
+                    video.load(); // Charge la vidéo
+                }
+                
+                video.play(); // Lance la lecture
+                // Optionnel : on peut arrêter d'observer si on veut qu'elle tourne en boucle même en scrollant loin
+                // observer.unobserve(video); 
+            } else {
+                // Optionnel : met la vidéo en pause quand on ne la voit plus pour économiser le processeur
+                entry.target.pause();
+            }
+        });
+    }, { threshold: 0.15 }); // Se déclenche quand 15% de la vidéo est visible
+
+    document.querySelectorAll('.lazy-video').forEach(v => videoObserver.observe(v));
 }
 
 function goToNextStep() {
