@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #131314;
+    --text-color: #e3e3e3;
+    --accent-color: #ffffff;
+    --border-color: #2a2a2c;
+}
+
+/* 1. Reset et Base */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Empêche le scroll sur le body pour laisser le container gérer le snap */
+}
+
+/* 2. Conteneur de l'expérience (Gestion du Scroll Snap) */
+#experience-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+
+/* 3. Structure des Sections */
+.section-full {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10%;
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden; /* Important pour garder le titre en vue */
+}
+
+/* 4. Titres */
+h1, .section-title {
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    flex-shrink: 0; /* Empêche le titre d'être écrasé */
+    margin-bottom: 2rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 1.8rem; font-weight: 300; }
+
+/* 5. Contenu et Texte */
+.container-fluid {
+    flex-grow: 1;
+    display: flex;
+    align-items: center; /* Centre le bloc contenu (texte/vidéo) verticalement */
+    overflow: hidden;
+}
+
+.text-content-wrapper {
+    max-height: 65vh; /* Ajuste la hauteur max pour laisser de la place au titre */
+    overflow-y: auto; /* Active le scroll interne si le texte dépasse */
+    padding-right: 15px;
+}
+
+.text-content {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* Scrollbar personnalisée pour le bloc de texte */
+.text-content-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+.text-content-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+.text-content-wrapper::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+/* 6. Médias (Mode B) */
+.video-container, .video-placeholder {
+    background: #000;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border: 1px solid #333;
+    color: #666;
+}
+
+/* 7. Boutons et Animations */
+.next-btn, .btn-start-qcm {
+    margin-top: 2rem;
+    padding: 12px 35px;
+    border: 1px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.next-btn:hover, .btn-start-qcm:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.animate-flicker {
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0.2; }
+}

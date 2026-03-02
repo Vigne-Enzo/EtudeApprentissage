@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition QCM</title>
+</head>
+
+<body style="background: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 100px;">
+    <h1>Simulation du QCM terminéc</h1>
+    <p>Chargement du second thème...</p>
+
+    <script>
+        // À mettre dans une balise <script> dans qcm.html
+        const urlParams = new URLSearchParams(window.location.search);
+        const parcours = urlParams.get('parcours');
+
+        function redirectionVersTheme2() {
+            let prochainSujet = "";
+            let prochainMode = "";
+
+            // Logique de bascule pour le second thème
+            if (parcours === "AD") { prochainSujet = "reseaux"; prochainMode = "D"; }
+            else if (parcours === "DA") { prochainSujet = "relativite"; prochainMode = "A"; }
+            else if (parcours === "BC") { prochainSujet = "reseaux"; prochainMode = "C"; }
+            else if (parcours === "CB") { prochainSujet = "relativite"; prochainMode = "B"; }
+
+            // On met à jour l'URL sans perdre les infos du participant
+            urlParams.set('sujet', prochainSujet);
+            urlParams.set('mode', prochainMode);
+
+            window.location.href = `experience.html?${urlParams.toString()}`;
+        }
+
+        // Pour ton test, on redirige après 3 secondes
+        setTimeout(redirectionVersTheme2, 3000);
+    </script>
+</body>
+
+</html>
