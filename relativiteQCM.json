@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qu’est-ce que la relativité restreinte ?",
+      "options": [
+        "Le phénomène qui fait que les durées entre les événements, l'order dans lequel ils se produisent et la longueur des objets peuvent changer selon le référentiel.",
+        "Le principe découvert par Galilée selon lequel on peut additionner les vitesses pour changer de référentiel.",
+        "La découverte que le temps est une dimension comme les autres, sur laquelle on peut voyager aussi facilement que dans l'espace.",
+        "Une transformation qui permet de décaler uniquement les tranches d'espace pour changer de point de vue."
+      ],
+      "reponse": 0
+    },
+    {
+      "id": 2,
+      "question": "Quelle découverte majeure du début du 20e siècle a bouleversé la vision classique de l'Univers ?",
+      "options": [
+        "La découverte que la Terre tourne autour du Soleil.",
+        "La découverte que la lumière est composée de particules.",
+        "La compréhension que le temps est une quatrième dimension de l'Univers.",
+        "La découverte de l'existence des trous noirs."
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 3,
+      "question": "Que permet de faire une transformation de Galilée dans le diagramme d'espace-temps ?",
+      "options": [
+        "Elle permet de déformer les tranches de temps pour garder la vitesse de la lumière constante.",
+        "Elle permet de changer de point de vue (de référentiel) en décalant les tranches d'espace les unes après les autres.",
+        "Elle permet de mesurer la distance hyperbolique entre deux événements.",
+        "Elle permet d'unifier le champ électrique et le champ magnétique."
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 4,
+      "question": "Quelle propriété de la lumière a stupéfié les physiciens au début du 20e siècle ?",
+      "options": [
+        "Sa vitesse est très élevée, d’environ 300 000 km/s.",
+        "Sa vitesse est relative et s'additionne à celle de la source, comme pour une balle.",
+        "Sa couleur change selon la vitesse de l'observateur.",
+        "Sa vitesse est absolue et identique dans tous les référentiels."
+      ],
+      "reponse": 3
+    },
+    {
+      "id": 5,
+      "question": "En quoi la transformation de Lorentz diffère-t-elle fondamentalement de la transformation de Galilée pour résoudre le problème de la vitesse de la lumière ?",
+      "options": [
+        "Elle ajoute une fivquième dimension au diagramme.",
+        "Elle ne décale que les tranches d'espace, mais deux fois plus vite.",
+        "Elle ne décale que les tranches de temps.",
+        "Elle décale à la fois les tranches d'espace et les tranches de temps."
+      ],
+      "reponse": 3
+    },
+    {
+      "id": 6,
+      "question": "Quelle est la conséquence directe des transformations de Lorentz sur les mesures d'un objet en mouvement ?",
+      "options": [
+        "Sa masse diminue et son volume augmente.",
+        "Sa longueur nous semble contractée et son horloge nous semble tourner au ralenti.",
+        "Sa couleur vire vers le rouge et sa température augmente.",
+        "Sa trajectoire devient circulaire."
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 7,
+      "question": "À quoi les physiciens comparent-ils les transformations de Lorentz ?",
+      "options": [
+        "À des translations sur une carte.",
+        "À un changement d'échelle d'une carte.",
+        "À des rotations sur une carte.",
+        "À une projection de Mercator."
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 8,
+      "question": "Quelle est l'innovation majeure de la métrique de Minkowski ?",
+      "options": [
+        "Elle permet de calculer la masse des objets.",
+        "Elle introduit une nouvelle façon de mesurer les distances dans l'espace-temps, où les hyperboles sont l'équivalent de cercles.",
+        "Elle démontre que le temps est une illusion.",
+        "Elle prouve que l'espace est plat et immuable."
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 9,
+      "question": "Que sont les rotations hyperboliques dans le contexte de la relativité restreinte ?",
+      "options": [
+        "Des rotations qui, contrairement aux rotations classiques, finissent par boucler sur elles-mêmes après un angle de 360 degrés.",
+        "L'équivalent abstrait des changements de référentiel, qui font glisser les points le long d'hyperboles tout en conservant leur distance du centre selon la métrique de Minkowski.",
+        "La déformation du diagramme d'espace-temps qui permet de transformer une durée en longueur, et inversement.",
+        "Une nouvelle manière de mesurer les angles qui remplace le cercle par une hyperbole, mais qui ne s'applique qu'à la lumière."
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 10,
+      "question": "Que mesure la \"rapidité\" en relativité restreinte ?",
+      "options": [
+        "La température d'un objet.",
+        "L'intensité de la gravité.",
+        "L'angle de la rotation dans l'espace-temps entre deux référentiels.",
+        "La longueur d'onde de la lumière émise."
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 11,
+      "question": "Comment l'espace-temps permet-il d'unifier l'énergie et la quantité de mouvement ?",
+      "options": [
+        "En démontrant que l'énergie n'existe pas pour un objet immobile.",
+        "En expliquant que la quantité de mouvement est le mouvement dans le temps, et l'énergie le mouvement dans l'espace.",
+        "En montrant que les deux grandeurs sont toujours égales.",
+        "En considérant l'énergie comme l'analogue temporel de la quantité de mouvement (mouvement dans le temps)."
+      ],
+      "reponse": 3
+    },
+    {
+      "id": 12,
+      "question": "De nos jours, considère-t-on la relativité restreinte comme toujours pertinente ?",
+      "options": [
+        "Non, elle a été complètement remplacée et abandonnée par la relativité générale.",
+        "Non, elle est fausse car l'univers est courbe.",
+        "Oui, elle reste la base de notre compréhension de l'univers à petite échelle, là où la courbure de l'espace-temps peut être négligée.",
+        "Oui, mais elle n'est valable que pour les objets se déplaçant à la vitesse de la lumière."
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 13,
+      "question": "Selon le texte, quelle est la différence fondamentale entre une rotation classique et une rotation hyperbolique ?",
+      "options": [
+        "Une rotation classique peut tourner indéfiniment alors qu'une rotation hyperbolique finit toujours par boucler sur elle-même.",
+        "Une rotation classique conserve les distances tandis qu'une rotation hyperbolique les déforme sans aucune régularité.",
+        "Une rotation classique finit par boucler sur elle-même après 360 degrés alors qu'une rotation hyperbolique peut tourner indéfiniment.",
+        "Une rotation classique ne s'applique qu'à l'espace tandis qu'une rotation hyperbolique ne s'applique qu'au temps."
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 14,
+      "question": "Pourquoi la vitesse de la lumière est-elle considérée comme une rapidité infinie ?",
+      "options": [
+        "Parce qu'elle parcourt des distances infinies en un temps nul.",
+        "Parce qu'elle correspond à un angle de rotation hyperbolique infini, qu'on ne peut atteindre qu'en accélérant infiniment longtemps.",
+        "Parce que sa valeur de 299 792 458 m/s est le plus grand nombre que les physiciens aient jamais mesuré.",
+        "Parce que dans le référentiel de la lumière, le temps s'arrête complètement."
+      ],
+      "reponse": 1
+    }
+  ]
+}

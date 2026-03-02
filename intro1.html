@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="intro.css" rel="stylesheet">
     <title>Préambule</title>
 </head>
-<body>
+<body class="bg-dark-exp">
+
     <h1 id="titre">Préambule de l'expérience</h1>
 
-    <p>
-        Bonjour ! Sur cette page, vous trouverez les consignes de l'expérience que vous allez passer 
-        ainsi qu'un questionnaire portant sur vos informations personnelles. Merci ! 
-    </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <p>
+                    Bonjour ! Sur cette page, vous trouverez les consignes de l'expérience que vous allez passer 
+                    ainsi qu'un questionnaire portant sur vos informations personnelles. Merci ! 
+                </p>
 
-    <p class="elt">
-        <i><u>Déroulement de l'expérience : </u></i><br><br>
-        Durant cette expérience, divers thèmes vont être abordés. 
-        Vous devrez essayer de retenir les informations présentées sur les différents documents, 
-        suite à quoi vous allez répondre à un QCM (Questionnaire à Choix Multiples). 
-    </p>
+                <p class="elt mx-auto">
+                    <i><u>Déroulement de l'expérience : </u></i><br><br>
+                    Durant cette expérience, divers thèmes vont être abordés. 
+                    Vous devrez essayer de retenir les informations présentées sur les différents documents, 
+                    suite à quoi vous allez répondre à un QCM (Questionnaire à Choix Multiples). 
+                </p>
 
-    <form class="elt" id="dataForm" action="experience.html">
-        <input type="hidden" name="parcours" value="AD">
+                <form class="elt mx-auto" id="dataForm" action="experience.html">
+                    <input type="hidden" name="parcours" value="AD">
 
-        <div class="fitem">
-            <label for="age" class="q">Quel est votre âge ?</label><br>
-            <input type="number" id="age" name="age" required><br>
+                    <div class="fitem mx-auto">
+                        <label for="age" class="q">Quel est votre âge ?</label><br>
+                        <input type="number" id="age" name="age" class="form-control-dark" required><br>
+                    </div>
+                    
+                    <div class="fitem mx-auto text-start ps-5">
+                        <label class="q ms-0">Quel est votre genre ?</label><br>
+                        <input type="radio" id="H" name="genre" value="male">
+                        <label for="H">Homme</label><br>
+                        <input type="radio" id="F" name="genre" value="female">
+                        <label for="F">Femme</label><br>
+                        <input type="radio" id="Autre" name="genre" value="NA">
+                        <label for="Autre">Autre</label><br>   
+                    </div>  
+                    
+                    <div class="fitem mx-auto text-start ps-5">
+                        <label class="q ms-0">Êtes-vous actuellement étudiant ?</label> <br>
+                        <input type="radio" id="student" name="etudiant" value="true">
+                        <label for="student">Oui</label><br>
+                        <input type="radio" id="notStudent" name="etudiant" value="false">
+                        <label for="notStudent">Non</label><br>
+                    </div>  
+
+                    <div class="fitem mx-auto">
+                        <label for="duree" class="q">Si non, depuis quand n'êtes-vous plus étudiant ? (en années)</label> <br>
+                        <input type="number" id="duree" name="duree" class="form-control-dark" placeholder="Durée en années">
+                    </div>  
+
+                    <div class="fitem mx-auto text-start ps-5">
+                        <label class="q ms-0">Avez-vous déjà des connaissances dans l'un des sujets suivants ?</label><br>
+                        <input type="checkbox" name="sujets" value="relativiteRestreinte" id="relRest">
+                        <label for="relRest"> Relativité Restreinte </label><br>
+                        <input type="checkbox" name="sujets" value="reseauxNeuronnes" id="resNeur">
+                        <label for="resNeur"> Réseaux de neurones </label><br>
+                    </div>
+
+                    <div class="consentement py-3">
+                        <input type="checkbox" name="consentement" value="oui" id="oui" required>
+                        <label for="oui"> Je consens à participer à cette expérience et à ce que mes données soient utilisées dans le cadre de cette recherche.</label><br>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <input type="submit" value="Valider" id="btn">
+                        <input type="reset" value="Réinitialiser" id="btn-reset">
+                    </div>
+                </form>
+            </div>
         </div>
-        
-        <div class="fitem">
-            <label class="q">Quel est votre genre ?</label><br>
-            <input type="radio" id="H" name="genre" value="male">
-            <label for="H">Homme</label><br>
-            <input type="radio" id="F" name="genre" value="female">
-            <label for="F">Femme</label><br>
-            <input type="radio" id="Autre" name="genre" value="NA">
-            <label for="Autre">Autre</label><br>   
-        </div>  
-        
-        <div class="fitem">
-            <label class="q">Êtes-vous actuellement étudiant ?</label> <br>
-            <input type="radio" id="student" name="etudiant" value="true">
-            <label for="student">Oui</label><br>
-            <input type="radio" id="notStudent" name="etudiant" value="false">
-            <label for="notStudent">Non</label><br>
-        </div>  
-
-        <div class="fitem">
-            <label for="duree" class="q">Si non, depuis quand n'êtes-vous plus étudiant ? (en années)</label> <br>
-            <input type="number" id="duree" name="duree" placeholder="Durée en années">
-        </div>  
-
-        <div class="fitem">
-            <label class="q">Avez-vous déjà des connaissances dans l'un des sujets suivants ?</label><br>
-            <input type="checkbox" name="sujets" value="relativiteRestreinte" id="relRest">
-            <label for="relRest"> Relativité Restreinte </label><br>
-            <input type="checkbox" name="sujets" value="reseauxNeuronnes" id="resNeur">
-            <label for="resNeur"> Réseaux de neurones </label><br>
-        </div>
-
-        <div class="consentement">
-            <input type="checkbox" name="consentement" value="oui" id="oui" required>
-            <label for="oui"> Je consens à participer à cette expérience et à ce que mes données soient utilisées dans le cadre de cette recherche.</label><br>
-        </div>
-
-        <div>
-            <input type="submit" value="Valider" id="btn" onclick="convertToJson()">
-            <input type="reset" value="Réinitialiser" id="btn">
-        </div>
-    </form>
+    </div>
+    <script src="savedata.js"></script>
+    <script src="traitementDonnees.js"></script>
+    
+    <script src="intro.js"></script>
     <script src="routes.js"></script>
 </body>
 </html>

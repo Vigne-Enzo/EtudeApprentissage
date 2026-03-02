@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <title>Transition QCM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation - Expérience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="qcm.css" rel="stylesheet">
 </head>
+<body>
 
-<body style="background: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 100px;">
-    <h1>Simulation du QCM terminéc</h1>
-    <p>Chargement du second thème...</p>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                
+                <div class="qcm-header mb-5">
+                    <div class="d-flex justify-content-between align-items-end mb-3">
+                        <div id="step-indicator">Question 01 <span class="total-steps">/ 14</span></div>
+                    </div>
+                    <div class="progress-container">
+                        <div id="progress-bar" class="progress-fill"></div>
+                    </div>
+                </div>
 
-    <script>
-        // À mettre dans une balise <script> dans qcm.html
-        const urlParams = new URLSearchParams(window.location.search);
-        const parcours = urlParams.get('parcours');
+                <main id="qcm-card" class="qcm-card">
+                    <div id="question-area">
+                        <h2 id="question-text">Chargement de la question...</h2>
+                        <div id="options-list" class="mt-4"></div>
+                    </div>
 
-        function redirectionVersTheme2() {
-            let prochainSujet = "";
-            let prochainMode = "";
+                    <div id="certitude-container" class="mt-5 pt-4 border-top border-secondary">
+                        <label class="d-flex justify-content-between mb-3">
+                            <span>Pas sûr (0)</span>
+                            <span class="fw-bold">Certitude : <span id="certitude-val">4</span> / 7</span>
+                            <span>Certain (7)</span>
+                        </label>
+                        <input type="range" class="form-range" min="1" max="7" step="1" id="certitude-range" value="4">
+                    </div>
 
-            // Logique de bascule pour le second thème
-            if (parcours === "AD") { prochainSujet = "reseaux"; prochainMode = "D"; }
-            else if (parcours === "DA") { prochainSujet = "relativite"; prochainMode = "A"; }
-            else if (parcours === "BC") { prochainSujet = "reseaux"; prochainMode = "C"; }
-            else if (parcours === "CB") { prochainSujet = "relativite"; prochainMode = "B"; }
+                    <div class="qcm-footer d-flex justify-content-between align-items-center mt-4">
+                        <div id="feedback-msg">Sélectionnez une réponse</div>
+                        <button id="next-btn" class="btn-next" disabled>Suivant</button>
+                    </div>
+                </main>
 
-            // On met à jour l'URL sans perdre les infos du participant
-            urlParams.set('sujet', prochainSujet);
-            urlParams.set('mode', prochainMode);
+                <div id="result-card" class="qcm-card d-none text-center py-5">
+                    <h2 class="display-6 fw-bold">Évaluation Terminée</h2>
+                    <p class="mt-4 text-muted">Merci de votre participation.</p>
+                    <p class="small text-secondary">Veuillez patienter...</p>
+                </div>
 
-            window.location.href = `experience.html?${urlParams.toString()}`;
-        }
+                <div id="survey-card" class="qcm-card d-none text-center py-5">
+                    <h2 id="survey-title" class="display-6 fw-bold">Dernière étape...</h2>
+                    <p id="survey-text" class="mt-4 text-muted">Connaissiez-vous déjà les notions abordées sur la Relativité ?</p>
+                    <div class="d-flex justify-content-center gap-4 mt-5">
+                        <button class="btn-next px-5" onclick="gererSondage(true)">OUI</button>
+                        <button class="btn-next px-5" style="background: #333; color: white;" onclick="gererSondage(false)">NON</button>
+                    </div>
+                </div>
 
-        // Pour ton test, on redirige après 3 secondes
-        setTimeout(redirectionVersTheme2, 3000);
-    </script>
+            </div>
+        </div>
+    </div>
+
+    <script src="savedata.js"></script>
+    
+    <script src="qcm.js"></script>
 </body>
-
 </html>

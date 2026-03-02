@@ -1,53 +1,87 @@
-body{
-    background-color: #e0e0e0;
-    color : black;
-
-    display : flex;
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    display: flex;
     flex-direction: column;
-    align-items : center;
-
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-bottom: 50px;
 }
 
 #titre {
-    padding-left: 34%;
-    padding-right: 34%;
-    padding-top : 2%;
-    padding-bottom : 2%;
-    background-color: rgb(33, 170, 194);
-    color : black;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
 }
 
 .elt {
-    border-style: double;
-    border-color: rgb(33, 170, 194);
-    border-radius: 3%;
-    padding : 8px;
-    width : 50%;
-    justify-items: center;
-}
-
-form {
-    font-size:smaller;
+    border: 4px double rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .fitem {
-    border-style : dashed;
-    border-color: rgb(33, 170, 194, 0.5);
-    margin : 15px;
-    width: 620px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    margin: 15px auto;
+    width: 90%;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .q {
-    font-size:medium;
-    margin : 5%;
+    font-size: 1.1rem;
     font-style: italic;
     text-decoration: underline;
+    color: #ffffff;
 }
 
+/* Correction du texte "noir sur noir" */
+.consentement label, 
+.form-check-label, 
+label {
+    color: #e0e0e0 !important; /* Force le texte en gris clair */
+}
+
+/* Style des inputs texte/nombre */
+.form-control-dark {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    width: 50%;
+}
+
+/* Boutons */
 #btn {
-    background-color: rgb(33, 170, 194);
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+#btn-reset {
+    background-color: transparent;
+    color: #888;
+    border: 1px solid #444;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
 
-
+#btn:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}

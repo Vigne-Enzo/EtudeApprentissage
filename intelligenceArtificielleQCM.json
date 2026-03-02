@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qu'est-ce qu'un spin dans le modèle d'Ising ?",
+      "options": [
+        "Une particule élémentaire qui se déplace à la vitesse de la lumière",
+        "Un minuscule champ magnétique généré par les électrons, pouvant être orienté vers le haut ou vers le bas",
+        "Une mesure de la température du matériau",
+        "Un défaut dans la structure cristalline du fer"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 2,
+      "question": "Dans le modèle d'Ising, quels sont les deux facteurs qui influencent l'évolution des spins ?",
+      "options": [
+        "La pression et l'humidité",
+        "La température qui fait fluctuer les spins et la tendance des spins adjacents à s'aligner",
+        "La gravité et le champ électrique",
+        "La vitesse de rotation de la Terre et le champ magnétique solaire"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 3,
+      "question": "Que représente la bille roulant dans un paysage vallonné dans l'analogie avec le modèle d'Ising ?",
+      "options": [
+        "La température du matériau",
+        "La configuration du réseau de spins à un instant donné",
+        "La taille des domaines magnétiques",
+        "L'intensité du champ magnétique externe"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 4,
+      "question": "Quelle est la principale innovation du réseau de Hopfield par rapport au modèle d'Ising ?",
+      "options": [
+        "Il remplace les atomes par des neurones artificiels connectés par des synapses avec des coefficients ajustables",
+        "Il utilise des spins quantiques au lieu de spins classiques",
+        "Il fonctionne uniquement à température nulle",
+        "Il ne peut mémoriser qu'un seul motif à la fois"
+      ],
+      "reponse": 0
+    },
+    {
+      "id": 5,
+      "question": "Comment un réseau de Hopfield parvient-il à mémoriser des motifs ?",
+      "options": [
+        "En stockant les motifs dans une mémoire externe",
+        "En créant des puits d'énergie autour de certaines configurations, vers lesquelles le réseau converge naturellement",
+        "En copiant exactement les motifs dans chaque neurone",
+        "En effaçant tous les autres motifs possibles"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 6,
+      "question": "Qu'est-ce que l'apprentissage automatique dans le contexte des réseaux de neurones ?",
+      "options": [
+        "Un processus où le réseau apprend tout seul sans données",
+        "L'ajustement progressif des paramètres du réseau à partir de nombreux exemples pour qu'il mémorise des motifs récurrents",
+        "Une méthode pour supprimer des neurones inutiles",
+        "L'utilisation de l'ordinateur pour écrire des programmes"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 7,
+      "question": "Comment peut-on représenter mathématiquement un réseau de neurones qui prend deux valeurs en entrée ?",
+      "options": [
+        "Comme une équation linéaire simple",
+        "Comme un champ qui associe une valeur à chaque point de l'espace à deux dimensions",
+        "Comme une série temporelle",
+        "Comme une matrice de spins"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 8,
+      "question": "Que se passe-t-il lorsqu'on fait varier aléatoirement les paramètres d'un réseau de neurones et qu'on observe la distribution des valeurs obtenues ?",
+      "options": [
+        "Toutes les valeurs sont toujours identiques",
+        "La distribution devient chaotique et imprévisible",
+        "La distribution tend vers une courbe en cloche (distribution gaussienne) lorsque le réseau devient très large",
+        "La distribution dépend uniquement du nombre de couches, pas de la largeur"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 9,
+      "question": "Comment se comporte un champ quantique sans interaction ?",
+      "options": [
+        "Ses valeurs fluctuent selon une distribution uniforme",
+        "Ses valeurs fluctuent selon une distribution gaussienne",
+        "Ses valeurs sont toujours nulles",
+        "Ses valeurs sont constantes dans le temps"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 10,
+      "question": "À quoi servent les diagrammes de Feynman en physique ?",
+      "options": [
+        "À représenter la structure des atomes",
+        "À calculer la température des étoiles",
+        "À étudier les interactions entre particules",
+        "À mesurer la vitesse de la lumière"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": 11,
+      "question": "Quel est l'intérêt d'utiliser les réseaux de neurones pour étudier la physique des particules ?",
+      "options": [
+        "Ils peuvent remplacer complètement les accélérateurs de particules",
+        "Ils pourraient offrir une nouvelle façon d'aborder des problèmes complexes comme la simulation des quarks",
+        "Ils sont moins chers que les ordinateurs classiques",
+        "Ils peuvent créer de nouvelles particules"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 12,
+      "question": "Lequel de ces modèles physiques les chercheurs sont-ils déjà parvenus à reproduire avec des réseaux de neurones ?",
+      "options": [
+        "La théorie de la relativité générale",
+        "Le modèle φ4 où les particules interagissent deux à deux",
+        "La mécanique quantique des trous noirs",
+        "La fusion nucléaire"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 13,
+      "question": "Comment les réseaux de neurones sont-ils déjà utilisés en physique expérimentale ?",
+      "options": [
+        "Pour remplacer les physiciens dans les laboratoires",
+        "Pour débruiter les signaux d'ondes gravitationnelles et analyser les données à la recherche de nouvelles particules",
+        "Pour construire de nouveaux accélérateurs",
+        "Pour mesurer directement la masse des particules"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": 14,
+      "question": "Pourquoi les notions physiques comme le paysage d'énergie ou les champs quantiques sont-elles utiles pour comprendre l'IA ?",
+      "options": [
+        "Elles permettent de construire des IA plus rapides",
+        "Elles offrent une passerelle pour traduire l'IA dans le langage de la physique et mieux interpréter ces \"boîtes noires\"",
+        "Elles remplacent complètement les mathématiques dans l'étude de l'IA",
+        "Elles permettent de prédire exactement ce que fera une IA"
+      ],
+      "reponse": 1
+    }
+  ]
+}
