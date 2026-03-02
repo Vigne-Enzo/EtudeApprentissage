@@ -125,3 +125,13 @@ h2 { font-size: 1.8rem; font-weight: 300; }
     50% { opacity: 0.7; }
     100% { opacity: 0.2; }
 }
+
+/* Si le container contient une vidéo, on enlève le fond, la bordure et la hauteur fixe */
+.video-container:has(video), 
+.video-placeholder:has(video) {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    min-height: auto !important;
+    padding: 0 !important;
+}
