@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 genre: formData.get('genre'),
                 etudiant: formData.get('etudiant'),
                 dureeNonEtudiant: formData.get('duree') || "N/A",
-                connaissancesInitiales: formData.getAll('sujets'),
                 consentement: formData.get('consentement')
             };
 
