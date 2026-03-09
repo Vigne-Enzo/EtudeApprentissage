@@ -24,7 +24,7 @@ body {
     border: 4px double rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     padding: 20px;
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.02);
 }
@@ -76,7 +76,7 @@ label {
 #btn-reset {
     background-color: transparent;
     color: #888;
-    border: 1px solid #444;
+    border: 1px solid #ffffff;
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
@@ -84,4 +84,30 @@ label {
 
 #btn:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Alignement spécifique pour le bloc consentement */
+.consentement {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.consentement input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.consentement label {
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    cursor: pointer;
+    margin: 0;
 }

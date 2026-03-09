@@ -47,16 +47,25 @@
                     
                     <div class="fitem mx-auto text-start ps-5">
                         <label class="q ms-0">Êtes-vous actuellement étudiant ?</label> <br>
-                        <input type="radio" id="student" name="etudiant" value="true">
+                        <input type="radio" id="student" name="etudiant" value="true" onclick="toggleStudentFields()">
                         <label for="student">Oui</label><br>
-                        <input type="radio" id="notStudent" name="etudiant" value="false">
+                        <input type="radio" id="notStudent" name="etudiant" value="false"
+                            onclick="toggleStudentFields()">
                         <label for="notStudent">Non</label><br>
-                    </div>  
+                    </div>
 
-                    <div class="fitem mx-auto">
-                        <label for="duree" class="q">Si non, depuis quand n'êtes-vous plus étudiant ? (en années)</label> <br>
-                        <input type="number" id="duree" name="duree" class="form-control-dark" placeholder="Durée en années">
-                    </div>  
+                    <div class="fitem mx-auto d-none" id="bloc-niveau">
+                        <label for="niveau" class="q">Quel est votre niveau d'étude ?</label> <br>
+                        <input type="text" id="niveau" name="niveau" class="form-control-dark"
+                            placeholder="Ex: BAC + ..." required disabled>
+                    </div>
+
+                    <div class="fitem mx-auto d-none" id="bloc-duree">
+                        <label for="duree" class="q">Depuis quand n'êtes-vous plus dans le système scolaire ? (en
+                            années)</label> <br>
+                        <input type="number" id="duree" name="duree" class="form-control-dark"
+                            placeholder="Durée en années" required disabled>
+                    </div>
 
                     <div class="consentement py-3">
                         <input type="checkbox" name="consentement" value="oui" id="oui" required>

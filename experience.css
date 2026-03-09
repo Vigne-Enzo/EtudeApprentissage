@@ -3,6 +3,7 @@
     --text-color: #e3e3e3;
     --accent-color: #ffffff;
     --border-color: #2a2a2c;
+    overflow: scroll;
 }
 
 /* 1. Reset et Base */
@@ -13,7 +14,7 @@ html, body {
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
-    overflow: hidden; /* Empêche le scroll sur le body pour laisser le container gérer le snap */
+    overflow: scroll;
 }
 
 /* 2. Conteneur de l'expérience (Gestion du Scroll Snap) */
@@ -35,7 +36,7 @@ html, body {
     flex-direction: column;
     padding: 5vh 10%;
     border-bottom: 1px solid var(--border-color);
-    overflow: hidden; /* Important pour garder le titre en vue */
+    overflow: scroll; /* Important pour garder le titre en vue */
 }
 
 /* 4. Titres */
@@ -57,7 +58,7 @@ h2 { font-size: 1.8rem; font-weight: 300; }
     flex-grow: 1;
     display: flex;
     align-items: center; /* Centre le bloc contenu (texte/vidéo) verticalement */
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .text-content-wrapper {
