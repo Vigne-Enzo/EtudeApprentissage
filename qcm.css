@@ -140,3 +140,10 @@ body {
 .text-secondary {
     color: #888888 !important;
 }
+
+.initial-empty::-webkit-slider-thumb {
+    opacity: 0;
+}
+.initial-empty::-moz-range-thumb {
+    opacity: 0;
+}

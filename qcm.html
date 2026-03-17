@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="qcm.css" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                
+
                 <div class="qcm-header mb-5">
                     <div class="d-flex justify-content-between align-items-end mb-3">
                         <div id="step-indicator">Question 01 <span class="total-steps">/ 14</span></div>
@@ -30,11 +32,11 @@
 
                     <div id="certitude-container" class="mt-5 pt-4 border-top border-secondary">
                         <label class="d-flex justify-content-between mb-3">
-                            <span>Pas sûr (0)</span>
-                            <span class="fw-bold">Certitude : <span id="certitude-val">4</span> / 7</span>
+                            <span>Pas sûr (1)</span>
+                            <span class="fw-bold">Certitude : <span id="certitude-val">--</span> / 7</span>
                             <span>Certain (7)</span>
                         </label>
-                        <input type="range" class="form-range" min="1" max="7" step="1" id="certitude-range" value="4">
+                        <input type="range" class="form-range" min="0" max="7" step="1" id="certitude-range" value="0">
                     </div>
 
                     <div class="qcm-footer d-flex justify-content-between align-items-center mt-4">
@@ -51,10 +53,13 @@
 
                 <div id="survey-card" class="qcm-card d-none text-center py-5">
                     <h2 id="survey-title" class="display-6 fw-bold">Dernière étape...</h2>
-                    <p id="survey-text" class="mt-4 text-muted">Connaissiez-vous déjà les notions abordées sur la Relativité ?</p>
+                    <p id="survey-text" class="mt-4 text-muted">Connaissiez-vous déjà les notions abordées sur la
+                        Relativité
+                        ?</p>
                     <div class="d-flex justify-content-center gap-4 mt-5">
                         <button class="btn-next px-5" onclick="gererSondage(true)">OUI</button>
-                        <button class="btn-next px-5" style="background: #333; color: white;" onclick="gererSondage(false)">NON</button>
+                        <button class="btn-next px-5" style="background: #333; color: white;"
+                            onclick="gererSondage(false)">NON</button>
                     </div>
                 </div>
 
@@ -63,7 +68,8 @@
     </div>
 
     <script src="savedata.js"></script>
-    
+
     <script src="qcm.js"></script>
 </body>
+
 </html>
