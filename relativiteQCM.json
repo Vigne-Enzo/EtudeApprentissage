@@ -4,7 +4,7 @@
       "id": 1,
       "question": "Qu’est-ce que la relativité restreinte ?",
       "options": [
-        "Le phénomène qui fait que les durées entre les événements, l'order dans lequel ils se produisent et la longueur des objets peuvent changer selon le référentiel.",
+        "Le phénomène qui fait que les durées entre les événements, l'ordre dans lequel ils se produisent et la longueur des objets peuvent changer selon le référentiel.",
         "Le principe découvert par Galilée selon lequel on peut additionner les vitesses pour changer de référentiel.",
         "La découverte que le temps est une dimension comme les autres, sur laquelle on peut voyager aussi facilement que dans l'espace.",
         "Une transformation qui permet de décaler uniquement les tranches d'espace pour changer de point de vue."
@@ -15,10 +15,10 @@
       "id": 2,
       "question": "Quelle découverte majeure du début du 20e siècle a bouleversé la vision classique de l'Univers ?",
       "options": [
-        "La découverte que la Terre tourne autour du Soleil.",
-        "La découverte que la lumière est composée de particules.",
-        "La compréhension que le temps est une quatrième dimension de l'Univers.",
-        "La découverte de l'existence des trous noirs."
+        "Le fait que la Terre tourne autour du Soleil.",
+        "Le fait que la lumière est composée de particules.",
+        "Le fait que le temps est une quatrième dimension.",
+        "Le fait que les trous noirs existent."
       ],
       "reponse": 2
     },
@@ -27,7 +27,7 @@
       "question": "Que permet de faire une transformation de Galilée dans le diagramme d'espace-temps ?",
       "options": [
         "Elle permet de déformer les tranches de temps pour garder la vitesse de la lumière constante.",
-        "Elle permet de changer de point de vue (de référentiel) en décalant les tranches d'espace les unes après les autres.",
+        "Elle permet de changer de référentiel en décalant les tranches d'espace les unes après les autres.",
         "Elle permet de mesurer la distance hyperbolique entre deux événements.",
         "Elle permet d'unifier le champ électrique et le champ magnétique."
       ],
@@ -51,7 +51,7 @@
         "Elle ajoute une cinquième dimension au diagramme.",
         "Elle ne décale que les tranches d'espace, mais deux fois plus vite.",
         "Elle ne décale que les tranches de temps.",
-        "Elle décale à la fois les tranches d'espace et les tranches de temps."
+        "Elle décale à la fois les tranches d'espace et de temps."
       ],
       "reponse": 3
     },
@@ -60,7 +60,7 @@
       "question": "Quelle est la conséquence directe des transformations de Lorentz sur les mesures d'un objet en mouvement ?",
       "options": [
         "Sa masse diminue et son volume augmente.",
-        "Sa longueur nous semble contractée et son horloge nous semble tourner au ralenti.",
+        "Sa longueur semble contractée et son horloge ralentie.",
         "Sa couleur vire vers le rouge et sa température augmente.",
         "Sa trajectoire devient circulaire."
       ],
@@ -105,7 +105,7 @@
       "options": [
         "La température d'un objet.",
         "L'intensité de la gravité.",
-        "L'angle de la rotation dans l'espace-temps entre deux référentiels.",
+        "L'angle de la rotation entre deux référentiels.",
         "La longueur d'onde de la lumière émise."
       ],
       "reponse": 2
@@ -127,7 +127,7 @@
       "options": [
         "Non, elle a été complètement remplacée et abandonnée par la relativité générale.",
         "Non, elle est fausse car l'univers est courbe.",
-        "Oui, elle reste la base de notre compréhension de l'univers à petite échelle, là où la courbure de l'espace-temps peut être négligée.",
+        "Oui, elle reste la base de notre compréhension de l'univers à petite échelle.",
         "Oui, mais elle n'est valable que pour les objets se déplaçant à la vitesse de la lumière."
       ],
       "reponse": 2
