@@ -1,0 +1,243 @@
+{
+    "participant": {
+        "parcours": "BC",
+        "age": "21",
+        "genre": "male",
+        "etudiant": "true",
+        "niveauEtude": "4",
+        "dureeNonEtudiant": "N\/A",
+        "connaissancesInitiales": [],
+        "consentement": "oui"
+    },
+    "reponses": [
+        {
+            "sujet": "relativite",
+            "questionId": 1,
+            "reponseChoisie": 3,
+            "estCorrect": false,
+            "certitude": "4",
+            "tempsSecondes": "74.78"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 2,
+            "reponseChoisie": 2,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "28.10"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 3,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "27.18"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 4,
+            "reponseChoisie": 3,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "35.53"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 5,
+            "reponseChoisie": 3,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "27.05"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 6,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "32.38"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 7,
+            "reponseChoisie": 2,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "41.26"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 8,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "20.38"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 9,
+            "reponseChoisie": 0,
+            "estCorrect": false,
+            "certitude": "7",
+            "tempsSecondes": "36.21"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 10,
+            "reponseChoisie": 2,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "15.25"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 11,
+            "reponseChoisie": 3,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "21.51"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 12,
+            "reponseChoisie": 2,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "44.09"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 13,
+            "reponseChoisie": 0,
+            "estCorrect": false,
+            "certitude": "7",
+            "tempsSecondes": "22.37"
+        },
+        {
+            "sujet": "relativite",
+            "questionId": 14,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "38.44"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 1,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "15.44"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 2,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "12.72"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 3,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "20.50"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 4,
+            "reponseChoisie": 0,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "21.83"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 5,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "16.79"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 6,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "21.20"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 7,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "68.74"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 8,
+            "reponseChoisie": 2,
+            "estCorrect": true,
+            "certitude": "4",
+            "tempsSecondes": "27.54"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 9,
+            "reponseChoisie": 0,
+            "estCorrect": false,
+            "certitude": "4",
+            "tempsSecondes": "30.95"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 10,
+            "reponseChoisie": 0,
+            "estCorrect": false,
+            "certitude": "2",
+            "tempsSecondes": "35.52"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 11,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "26.81"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 12,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "15.34"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 13,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "19.72"
+        },
+        {
+            "sujet": "reseaux",
+            "questionId": 14,
+            "reponseChoisie": 1,
+            "estCorrect": true,
+            "certitude": "7",
+            "tempsSecondes": "15.82"
+        }
+    ],
+    "sondageConnaissances": {
+        "relativite": "NON",
+        "ia": "NON"
+    },
+    "timestamp": "2026-03-09T13:42:57.555Z"
+}
