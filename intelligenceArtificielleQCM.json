@@ -5,9 +5,9 @@
       "question": "Qu'est-ce qu'un spin dans le modèle d'Ising ?",
       "options": [
         "Une particule élémentaire qui se déplace à la vitesse de la lumière",
-        "Un minuscule champ magnétique généré par les électrons, pouvant être orienté vers le haut ou vers le bas",
-        "Une mesure de la température du matériau",
-        "Un défaut dans la structure cristalline du fer"
+        "Un champ magnétique généré par les électrons, pouvant être orienté vers le haut ou le bas",
+        "Une mesure de la température du matériau dépendant de la taille du champ magnétique",
+        "Un défaut dans la structure cristalline du fer qui impacte les électrons"
       ],
       "reponse": 1
     },
@@ -16,7 +16,7 @@
       "question": "Dans le modèle d'Ising, quels sont les deux facteurs qui influencent l'évolution des spins ?",
       "options": [
         "La pression et l'humidité",
-        "La température qui fait fluctuer les spins et la tendance des spins adjacents à s'aligner",
+        "La température et la tendance des spins adjacents",
         "La gravité et le champ électrique",
         "La vitesse de rotation de la Terre et le champ magnétique solaire"
       ],
@@ -37,10 +37,10 @@
       "id": 4,
       "question": "Quelle est la principale innovation du réseau de Hopfield par rapport au modèle d'Ising ?",
       "options": [
-        "Il remplace les atomes par des neurones artificiels connectés par des synapses avec des coefficients ajustables",
+        "Il remplace les atomes par des neurones artificiels connectés par des synapses",
         "Il utilise des spins quantiques au lieu de spins classiques",
         "Il fonctionne uniquement à température nulle",
-        "Il ne peut mémoriser qu'un seul motif à la fois"
+        "Il ne peut mémoriser qu'un seul motif à la fois car la mémoire est externe au système"
       ],
       "reponse": 0
     },
@@ -49,7 +49,7 @@
       "question": "Comment un réseau de Hopfield parvient-il à mémoriser des motifs ?",
       "options": [
         "En stockant les motifs dans une mémoire externe",
-        "En créant des puits d'énergie autour de certaines configurations, vers lesquelles le réseau converge naturellement",
+        "En créant des puits d'énergie vers lesquelles le réseau converge naturellement",
         "En copiant exactement les motifs dans chaque neurone",
         "En effaçant tous les autres motifs possibles"
       ],
@@ -60,7 +60,7 @@
       "question": "Qu'est-ce que l'apprentissage automatique dans le contexte des réseaux de neurones ?",
       "options": [
         "Un processus où le réseau apprend tout seul sans données",
-        "L'ajustement progressif des paramètres du réseau à partir de nombreux exemples pour qu'il mémorise des motifs récurrents",
+        "Un processus où le réseau apprend à partir de nombreux exemples",
         "Une méthode pour supprimer des neurones inutiles",
         "L'utilisation de l'ordinateur pour écrire des programmes"
       ],
@@ -71,7 +71,7 @@
       "question": "Comment peut-on représenter mathématiquement un réseau de neurones qui prend deux valeurs en entrée ?",
       "options": [
         "Comme une équation linéaire simple",
-        "Comme un champ qui associe une valeur à chaque point de l'espace à deux dimensions",
+        "Comme un champ qui associe une valeur à chaque point de l'espace",
         "Comme une série temporelle",
         "Comme une matrice de spins"
       ],
@@ -82,8 +82,8 @@
       "question": "Que se passe-t-il lorsqu'on fait varier aléatoirement les paramètres d'un réseau de neurones et qu'on observe la distribution des valeurs obtenues ?",
       "options": [
         "Toutes les valeurs sont toujours identiques",
-        "La distribution devient chaotique et imprévisible",
-        "La distribution tend vers une courbe en cloche (distribution gaussienne) lorsque le réseau devient très large",
+        "La distribution est hasardeuse, elle devient chaotique et imprévisible",
+        "La distribution tend vers une courbe en cloche lorsque le réseau devient large",
         "La distribution dépend uniquement du nombre de couches, pas de la largeur"
       ],
       "reponse": 2
@@ -115,7 +115,7 @@
       "question": "Quel est l'intérêt d'utiliser les réseaux de neurones pour étudier la physique des particules ?",
       "options": [
         "Ils peuvent remplacer complètement les accélérateurs de particules",
-        "Ils pourraient offrir une nouvelle façon d'aborder des problèmes complexes comme la simulation des quarks",
+        "Ils pourraient offrir une nouvelle façon d'aborder des problèmes complexes",
         "Ils sont moins chers que les ordinateurs classiques",
         "Ils peuvent créer de nouvelles particules"
       ],
@@ -126,7 +126,7 @@
       "question": "Lequel de ces modèles physiques les chercheurs sont-ils déjà parvenus à reproduire avec des réseaux de neurones ?",
       "options": [
         "La théorie de la relativité générale",
-        "Le modèle φ4 où les particules interagissent deux à deux",
+        "Le modèle φ4",
         "La mécanique quantique des trous noirs",
         "La fusion nucléaire"
       ],
@@ -137,7 +137,7 @@
       "question": "Comment les réseaux de neurones sont-ils déjà utilisés en physique expérimentale ?",
       "options": [
         "Pour remplacer les physiciens dans les laboratoires",
-        "Pour débruiter les signaux d'ondes gravitationnelles et analyser les données à la recherche de nouvelles particules",
+        "Pour débruiter les signaux d'ondes gravitationnelles",
         "Pour construire de nouveaux accélérateurs",
         "Pour mesurer directement la masse des particules"
       ],
@@ -148,9 +148,9 @@
       "question": "Pourquoi les notions physiques comme le paysage d'énergie ou les champs quantiques sont-elles utiles pour comprendre l'IA ?",
       "options": [
         "Elles permettent de construire des IA plus rapides",
-        "Elles offrent une passerelle pour traduire l'IA dans le langage de la physique et mieux interpréter ces \"boîtes noires\"",
+        "Elles offrent une passerelle pour traduire l'IA dans le langage de la physique et mieux l'interpréter",
         "Elles remplacent complètement les mathématiques dans l'étude de l'IA",
-        "Elles permettent de prédire exactement ce que fera une IA"
+        "Elles permettent de prédire exactement ce que fera une IA de manière moins coûteuse en énergie"
       ],
       "reponse": 1
     }
