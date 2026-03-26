@@ -3,8 +3,23 @@ import csv
 import os
 
 data_folder = 'data/'
+# Création du dossier csv s'il n'existe pas
+os.makedirs('csv', exist_ok=True)
 participants_file = 'csv/participants.csv'
 results_file = 'csv/results.csv'
+
+def get_illustration_value(parcours, sujet):
+    """
+    Logique :
+    AD ou DA : Relativité = False, Réseaux = True
+    BC ou CB : Relativité = True, Réseaux = False
+    """
+    p = parcours.upper()
+    if p in ['AD', 'DA']:
+        return True if sujet == 'reseaux' else False
+    elif p in ['BC', 'CB']:
+        return True if sujet == 'relativite' else False
+    return False # Valeur par défaut si parcours inconnu
 
 def process_json_files():
     all_participants = []
@@ -23,37 +38,42 @@ def process_json_files():
                 data = json.load(f)
                 
                 # --- 1. PARTICIPANTS ---
-                # On récupère les deux blocs
                 part = data.get('participant', {}).copy()
+                parcours_client = part.get('parcours', '')
                 sond = data.get('sondageConnaissances', {}).copy()
                 
-                # Suppression de la colonne indésirable
                 if 'connaissancesInitiales' in part:
                     del part['connaissancesInitiales']
                 
-                # Construction de la ligne avec RENOMMAGE explicite
                 row_p = {'id': file_id}
                 row_p.update(part)
                 row_p['connaissancesRelativite'] = sond.get('relativite')
                 row_p['connaissancesIA'] = sond.get('ia')
-                
                 all_participants.append(row_p)
 
                 # --- 2. RÉSULTATS ---
                 for resp in data.get('reponses', []):
-                    row_r = {'id': file_id}
-                    row_r.update(resp)
+                    sujet = resp.get('sujet')
+                    
+                    # On construit le dictionnaire manuellement pour l'ordre des colonnes
+                    row_r = {
+                        'id': file_id,
+                        'sujet': sujet,
+                        'questionId': resp.get('questionId'),
+                        'reponseChoisie': resp.get('reponseChoisie'),
+                        'illustration': get_illustration_value(parcours_client, sujet), # Nouveau champ
+                        'estCorrect': resp.get('estCorrect'),
+                        'certitude': resp.get('certitude'),
+                        'tempsSecondes': resp.get('tempsSecondes')
+                    }
                     all_results.append(row_r)
 
-    # Sauvegarde des fichiers
     save_csv(participants_file, all_participants)
     save_csv(results_file, all_results)
 
 def save_csv(filename, data_list):
     if not data_list: return
     
-    # On détermine les headers à partir de toutes les clés possibles
-    # (Sécurité si un JSON a des champs en moins)
     headers = []
     for d in data_list:
         for k in d.keys():
