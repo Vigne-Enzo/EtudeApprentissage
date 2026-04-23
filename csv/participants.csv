@@ -1,5 +1,5 @@
 id,parcours,age,genre,etudiant,niveauEtude,dureeNonEtudiant,consentement,connaissancesRelativite,connaissancesIA
-2026-03-17-11-10-20,AD,22,male,true,BAC + 4,N/A,oui,NON,NON
+2026-03-17-11-10-20,AD,22,male,false,BAC + 4,N/A,oui,NON,NON
 2026-03-09-15-25-15,BC,21,male,true,4,N/A,oui,NON,NON
 2026-03-18-15-00-59,DA,21,female,true,Bac+4,N/A,oui,NON,NON
 2026-03-09-15-28-23,CB,22,male,true,Bac+4,N/A,oui,NON,NON
