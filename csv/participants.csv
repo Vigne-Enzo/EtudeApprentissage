@@ -1,5 +1,17 @@
 id,parcours,age,genre,etudiant,niveauEtude,dureeNonEtudiant,consentement,connaissancesRelativite,connaissancesIA
-2026-03-17-11-10-20,AD,22,male,false,BAC + 4,N/A,oui,NON,NON
+2026-03-17-11-10-20,AD,22,male,true,BAC + 4,N/A,oui,NON,NON
+2026-03-27-13-25-20,AD,24,male,false,B.E.P,5,oui,NON,NON
+2026-03-27-13-23-02,AD,24,male,false,BAC+1,1,oui,NON,NON
+2026-04-18-17-04-16,DA,24,male,false,BAC,6,oui,NON,NON
+2026-03-29-22-53-49,BC,21,female,true,Bac,N/A,oui,NON,NON
+2026-04-13-14-41-36,BC,23,male,false,BAC,5,oui,NON,NON
+2026-04-19-18-46-04,DA,32,female,false,bac +5,7,oui,NON,NON
+2026-04-12-17-10-59,CB,30,male,true,BAC+5,N/A,oui,NON,NON
 2026-03-09-15-25-15,BC,21,male,true,4,N/A,oui,NON,NON
+2026-04-07-17-30-07,DA,21,male,true,BAC+4,N/A,oui,NON,NON
+2026-04-23-13-21-39,CB,26,female,false,bac+8,1,oui,NON,NON
 2026-03-18-15-00-59,DA,21,female,true,Bac+4,N/A,oui,NON,NON
+2026-04-19-20-56-34,CB,33,male,false,bac +5,7,oui,NON,NON
+2026-03-28-17-35-27,AD,21,female,true,Master 1,N/A,oui,NON,NON
 2026-03-09-15-28-23,CB,22,male,true,Bac+4,N/A,oui,NON,NON
+2026-04-25-08-51-46,BC,29,male,false,BEP,11,oui,NON,NON
