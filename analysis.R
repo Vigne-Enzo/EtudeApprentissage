@@ -129,6 +129,15 @@ data_certitude_etud <- data_certitude %>%
     .groups = "drop"
   )
 
+data_temps_etud <- data_temps %>%
+  filter(etudiant == "true") %>% 
+  group_by(illustration) %>%
+  summarise(
+    temps_moyen = mean(moy_temps, na.rm = TRUE),
+    se = sd(moy_temps, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  )
+
 ggplot(data_etudiants, aes(x = illustration, y = moyenne_score, fill = illustration)) +
   geom_bar(stat = "identity", width = 0.5, color = "black") +
   scale_fill_manual(values = c("grey", "skyblue"), labels = c("Texte seul", "Avec illustrations")) +
@@ -136,7 +145,7 @@ ggplot(data_etudiants, aes(x = illustration, y = moyenne_score, fill = illustrat
     title = "Performance des étudiants selon le support",
     x = "Type de support",
     y = "Score moyen",
-    fill = "Condition")
+    fill = "Condition") + ylim(0,1)
 
 ggplot(data_certitude_etud, aes(x = illustration, y = moyenne, fill = illustration)) +
   geom_bar(stat = "identity", width = 0.5, color = "black") +
@@ -147,6 +156,17 @@ ggplot(data_certitude_etud, aes(x = illustration, y = moyenne, fill = illustrati
     y = "Certitude moyenne", 
     fill = "Condition"
   )+ ylim(0,7)
+
+ggplot(data_temps_etud, aes(x = illustration, y = temps_moyen, fill = illustration)) +
+  geom_bar(stat = "identity", width = 0.5, color = "black") +
+  scale_fill_manual(values = c("grey", "skyblue"), 
+                    labels = c("Texte seul", "Avec illustrations")) +
+  labs(
+    title = "Temps de réponse moyen des étudiants",
+    x = "Type de support",
+    y = "Temps moyen par question",
+    fill ="Condition"
+  ) + ylim(0,30)
 
 #Pour le groupe non-étudiant
 data_nnetudiants <- data_score %>%
@@ -163,6 +183,15 @@ data_certitude_nnetud <- data_certitude %>%
     .groups = "drop"
   )
 
+data_temps_nnetud <- data_temps %>%
+  filter(etudiant == "false") %>% 
+  group_by(illustration) %>%
+  summarise(
+    temps_moyen = mean(moy_temps, na.rm = TRUE),
+    se = sd(moy_temps, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  )
+
 ggplot(data_nnetudiants, aes(x = illustration, y = moyenne_score, fill = illustration)) +
   geom_bar(stat = "identity", width = 0.5, color = "black") +
   scale_fill_manual(values = c("gray70", "skyblue"), labels = c("Texte seul", "Avec illustrations")) +
@@ -170,7 +199,7 @@ ggplot(data_nnetudiants, aes(x = illustration, y = moyenne_score, fill = illustr
     title = "Performance des non étudiants selon le support",
     x = "Type de support",
     y = "Score moyen",
-    fill = "Condition")
+    fill = "Condition")  + ylim(0,1)
 
 ggplot(data_certitude_nnetud, aes(x = illustration, y = moyenne, fill = illustration)) +
   geom_bar(stat = "identity", width = 0.5, color = "black") +
@@ -181,3 +210,16 @@ ggplot(data_certitude_nnetud, aes(x = illustration, y = moyenne, fill = illustra
     y = "Certitude moyenne", 
     fill = "Condition"
   ) + ylim(0,7)
+
+ggplot(data_temps_nnetud, aes(x = illustration, y = temps_moyen, fill = illustration)) +
+  geom_bar(stat = "identity", width = 0.5, color = "black") +
+  scale_fill_manual(values = c("grey", "skyblue"), 
+                    labels = c("Texte seul", "Avec illustrations")) +
+  labs(
+    title = "Temps de réponse moyen des non-étudiants",
+    x = "Type de support",
+    y = "Temps moyen par question", 
+    fill = "Condition"
+  ) + ylim(0,30)
+
+#moy score étu : 
