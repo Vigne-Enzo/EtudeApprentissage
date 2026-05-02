@@ -222,4 +222,4 @@ ggplot(data_temps_nnetud, aes(x = illustration, y = temps_moyen, fill = illustra
     fill = "Condition"
   ) + ylim(0,30)
 
-#moy score étu : 
+
